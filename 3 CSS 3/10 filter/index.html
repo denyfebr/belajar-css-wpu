@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Filter</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        /*
+        Filter
+        blur(px)
+        brightness(angka | %)
+        contrast(angka | %)
+        saturate(angka | %)
+        grayscale(angka | %)
+        sepia(angka | %)
+        hue-rotate(deg)
+        invert(angka| %)
+        opacity(angka | %)
+        drop-shadow(sama sperti box-shadow)
+        */
+        img {
+            filter: blur(10px) grayscale(100%);
+            /* filter: brightness(200%); */
+            /* filter: contrast(150%); */
+            /* filter: saturate(200%); */
+            /* filter: grayscale(100%); */
+            /* filter: sepia(100%); */
+            /* filter: hue-rotate(100deg); */
+            /* filter: invert(100%); */
+            /* filter: opacity(.5); */
+            /* filter: drop-shadow(5px 5px 5px black); */
+            transition: 1s;
+        }
+
+        img:hover {
+            filter: blur(0) grayscale(0);
+        }
+    </style>
+</head>
+<body>
+    <img src="img/gambar.png" alt="Deny Febriyanto">
+    <h1>Deny Febriyanto</h1>
+</body>
+</html>

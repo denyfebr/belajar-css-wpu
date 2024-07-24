@@ -1,0 +1,18 @@
+/* belajar mengenai text styling */
+h1 {
+    color: rgb(115, 80, 122);
+    font-size: 150px;
+    /*text-decoration: overline;*/
+    text-transform: lowercase;
+}
+
+p {
+    text-indent: 100px;
+    text-transform: capitalize;
+    /*letter-spacing: 5px;*/
+    word-spacing: 10px;
+}
+
+a {
+    text-decoration: none;
+}
