@@ -20,8 +20,8 @@ section {
   padding: 0;
 }
 
-/* My Animals Section */
-.animal-box {
+/* My certis Section */
+.certi-box {
   position: relative;
   background-color: #0c6efd;
   border-radius: 10px;
@@ -29,7 +29,7 @@ section {
   transform-style: preserve-3d;
 }
 
-.animal-box::before {
+.certi-box::before {
   content: "MY";
   position: absolute;
   color: #fff;
@@ -43,14 +43,14 @@ section {
   transition: 0.5s;
 }
 
-.animal-box:hover::before {
+.certi-box:hover::before {
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0.2;
 }
 
-.animal-box::after {
-  content: "ANIMAL";
+.certi-box::after {
+  content: "certi";
   position: absolute;
   color: #fff;
   font-size: 4.3em;
@@ -63,13 +63,13 @@ section {
   transition: 0.5s;
 }
 
-.animal-box:hover::after {
+.certi-box:hover::after {
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0.2;
 }
 
-.animal-name {
+.certi-name {
   position: absolute;
   top: 0;
   width: 100%;
@@ -81,12 +81,12 @@ section {
   transition: 0.5s;
 }
 
-.animal-box:hover .animal-name {
+.certi-box:hover .certi-name {
   top: 20px;
   opacity: 1;
 }
 
-.animal-detail-btn {
+.certi-detail-btn {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -95,12 +95,12 @@ section {
   transition: 0.5s;
 }
 
-.animal-box:hover .animal-detail-btn {
+.certi-box:hover .certi-detail-btn {
   bottom: 20px;
   opacity: 1;
 }
 
-.animal-img {
+.certi-img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -110,6 +110,115 @@ section {
   z-index: 10;
 }
 
-.animal-box:hover .animal-img {
+.certi-box:hover .certi-img {
   transform: translate3d(-50%, -52%, 100px) scale(1.2);
+}
+
+/* Overlay */
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  transition: 0.8s;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay img {
+  max-height: 100%;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.overlay:target img {
+  animation: zoomDanFade 1s;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -20px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid white;
+  line-height: 20px;
+  padding: 5px;
+  opacity: 0;
+}
+
+.overlay:target .close {
+  animation: slideDownFade 0.5s 0.5s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+  animation: fadeAjah 0.5s 0.5s forwards;
+}
+
+/* navigasi */
+.next,
+.prev {
+  width: 50px;
+  height: 82px;
+  background-image: url(img/next.png);
+  position: absolute;
+  text-indent: -9999px;
+  top: 40%;
+  margin-left: 50px;
+  opacity: 0;
+}
+
+.prev {
+  background-image: url(img/prev.png);
+  margin-left: -100px;
+}
+
+/* animasi */
+
+@keyframes fadeAjah {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomDanFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }

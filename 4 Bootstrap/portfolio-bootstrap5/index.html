@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="style.css" />
 
     <title>My Portfolio | Deny Febriyanto</title>
@@ -30,7 +31,16 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#footprints">Footprints</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mycertis">Certificates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Galeries</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact Me</a>
@@ -42,7 +52,7 @@
     <!-- End Navbar -->
     <!-- Start Jumbotron-->
     <section class="jumbotron text-center">
-      <img src="img/Deny.jpg" alt="Deny Febriyanto" width="200px" class="rounded-circle img-thumbnail shadow-sm" />
+      <img src="img/Deny Febriyanto.jpg" alt="Deny Febriyanto" width="200px" class="rounded-circle img-thumbnail shadow-sm" />
       <h1 class="display-4">Deny Febriyanto</h1>
       <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -65,10 +75,16 @@
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti suscipit praesentium quas autem fugiat! Fugit itaque recusandae voluptate nobis alias.</p>
+            <p>
+              My name is Deny, and I am currently 37 years old. I was born in Jember and now live in Kecamatan Tambun Utara, Kabupaten Bekasi. I have been married for seven years and am blessed with a daughter who is currently four and a
+              half years old.
+            </p>
           </div>
           <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis beatae porro illum assumenda quae rerum. Voluptas obcaecati totam, quia omnis modi voluptatem quas quasi! Aspernatur!</p>
+            <p>
+              Currently serving as an IS and Database Officer at PT SMART Tbk with over 7.5 years of experience. Skilled in web programming (4 years in ASP.NET MVC, PHP CodeIgniter, and native Android development), database management
+              (PostgreSQL, MySQL, SQL Server), and data visualization using Power BI. Certified in Cyber Security by Indonesia’s National Professional Certification Agency (BNSP).
+            </p>
           </div>
         </div>
       </div>
@@ -82,6 +98,28 @@
     </section>
     <!-- End about me -->
 
+    <!-- Start footprints -->
+    <section id="footprints">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Footprints</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div id="map" style="height: 450px; width: 100%"></div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,128C672,117,768,139,864,165.3C960,192,1056,224,1152,229.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End footprints -->
+
     <!-- Start Project -->
     <section id="projects">
       <div class="container">
@@ -91,95 +129,129 @@
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-left" data-aos-duration="2000">
-              <img src="img/projects/1.jpg" class="card-img-top" alt="Project 1" />
+              <img src="img/projects/Smartscan Home page.png" class="card-img-top" alt="Project 1" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">
+                  SMART SCAN (Supply Chain Assessment Navigator) is a platform developed with ASP.NET MVC C# and used to obtain comprehensive profile information of suppliers who produce Crude Palm Oil (CPO) and Palm Kernel (PK), which are
+                  subsequently supplied to GAR (Golden Agri-Resources) Refineries.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="100">
-              <img src="img/projects/2.jpg" class="card-img-top" alt="Project 2" />
+              <img src="img/projects/Smartscan Info Detail.png" class="card-img-top" alt="Project 2" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Through SMART SCAN, users can access detailed supplier profiles, including supply volume records, track records, capacity building records, contact person information, and geolocation data.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="200">
-              <img src="img/projects/3.jpg" class="card-img-top" alt="Project 3" />
+              <img src="img/projects/Smartcheck assessment.png" class="card-img-top" alt="Project 3" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Developed a web-based Online Supplier Self-Assessment (SSA) Form for the Compliances Team. The application was built using the PHP CodeIgniter framework.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300">
-              <img src="img/projects/4.jpg" class="card-img-top" alt="Project 4" />
+              <img src="img/projects/Smartcheck score.png" class="card-img-top" alt="Project 4" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">The Online Supplier Self-Assessment (SSA) system, named SMART CHECK, provides assessment tools for suppliers and generates compliance scores based on their responses.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="400">
-              <img src="img/projects/5.jpg" class="card-img-top" alt="Project 5" />
+              <img src="img/projects/Smartlearning.png" class="card-img-top" alt="Project 5" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">SMART Learning is an e-learning platform built with Moodle framework designed to provide educational materials that facilitate knowledge transfer on sustainability practices to GAR’s suppliers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="400">
+              <img src="img/projects/PowerBI.png" class="card-img-top" alt="Project 5" />
+              <div class="card-body">
+                <p class="card-text">Developed a data visualization dashboard using Power BI, which compiles and integrates data from multiple application databases into a centralized and interactive reporting platform.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <section id="my-animals">
+      <section id="my-certis">
         <div class="container">
           <div class="row text-center mb-3">
-            <div class="col"><h2>My Animals</h2></div>
+            <div class="col"><h2>My Certificates</h2></div>
           </div>
           <div class="row">
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="animal-box">
-                <h4 class="animal-name">Deer</h4>
-                <img src="img/animals/deer.png" alt="Deer" class="animal-img" />
-                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              <div class="certi-box">
+                <h4 class="certi-name">Certificate of Competence Information Security Management</h4>
+                <img src="img/cert/Security Information Management.jpg" alt="BNSP" class="certi-img" />
+                <a href="#" class="btn btn-light certi-detail-btn">Show detail</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="animal-box">
-                <h4 class="animal-name">Zebra</h4>
-                <img src="img/animals/zebra.png" alt="Zebra" class="animal-img" />
-                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              <div class="certi-box">
+                <h4 class="certi-name">Big Data</h4>
+                <img src="img/cert/CERT_Big_Data_Analytic_and_Practice_Deny.jpg" alt="Big Data" class="certi-img" />
+                <a href="#" class="btn btn-light certi-detail-btn">Show detail</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="animal-box">
-                <h4 class="animal-name">Rhino</h4>
-                <img src="img/animals/rhino.png" alt="Rhino" class="animal-img" />
-                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              <div class="certi-box">
+                <h4 class="certi-name">Hadoop</h4>
+                <img src="img/cert/CERT_Hadoop_Deny_F.jpg" alt="Hadoop" class="certi-img" />
+                <a href="#" class="btn btn-light certi-detail-btn">Show detail</a>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="animal-box">
-                <h4 class="animal-name">Camel</h4>
-                <img src="img/animals/camel.png" alt="Camel" class="animal-img" />
-                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              <div class="certi-box">
+                <h4 class="certi-name">Machine Learning</h4>
+                <img src="img/cert/Machine_Learning.jpg" alt="ML" class="certi-img" />
+                <a href="#" class="btn btn-light certi-detail-btn">Show detail</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="animal-box">
-                <h4 class="animal-name">Elephant</h4>
-                <img src="img/animals/elephant.png" alt="Elephant" class="animal-img" />
-                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              <div class="certi-box">
+                <h4 class="certi-name">Power BI</h4>
+                <img src="img/cert/Data_Visualisasi_PowerBI.jpg" alt="Power BI" class="certi-img" />
+                <a href="#" class="btn btn-light certi-detail-btn">Show detail</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="animal-box">
-                <h4 class="animal-name">Rhino</h4>
-                <img src="img/animals/hippo.png" alt="Rhino" class="animal-img" />
-                <a href="#" class="btn btn-light animal-detail-btn">Show detail</a>
+              <div class="certi-box">
+                <h4 class="certi-name">English for Bussiness</h4>
+                <img src="img/cert/EnglishToday.jpg" alt="English Course" class="certi-img" />
+                <a href="#" class="btn btn-light certi-detail-btn">Show detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="certi-box">
+                <h4 class="certi-name">Android Advanced</h4>
+                <img src="img/cert/Android Advanced.png" alt="Android Advanced" class="certi-img" />
+                <a href="#" class="btn btn-light certi-detail-btn">Show detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="certi-box">
+                <h4 class="certi-name">Android Developer</h4>
+                <img src="img/cert/Android Developer.png" alt="Android Developer" class="certi-img" />
+                <a href="#" class="btn btn-light certi-detail-btn">Show detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="certi-box">
+                <h4 class="certi-name">Android MySQL</h4>
+                <img src="img/cert/Android MySQL.png" alt="Android MySQL" class="certi-img" />
+                <a href="#" class="btn btn-light certi-detail-btn">Show detail</a>
               </div>
             </div>
           </div>
@@ -206,54 +278,114 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/1.jpg" alt="Gambar 1" class="img-fluid gallery-img" />
+            <a href="#gambar-1">
+              <img src="img/gallery/thumbnail/Annual Meeting Sust Belitung 2019.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
+            <div class="overlay" id="gambar-1">
+              <a href="#" class="close">x close</a>
+              <a href="#gambar-10" class="prev">prev</a>
+              <img src="img/gallery/show/Annual Meeting Belitung.jpeg" alt="Annual Meeting Belitung" />
+              <a href="#gambar-2" class="next">next</a>
+            </div>
           </div>
           <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/2.jpg" alt="Gambar 2" class="img-fluid gallery-img" />
+            <a href="#gambar-2">
+              <img src="img/gallery/thumbnail/Pelatihan STAR Apps Petani.jpg" alt="Gambar 2" class="img-fluid gallery-img" />
             </a>
+            <div class="overlay" id="gambar-2">
+              <a href="#" class="close">x close</a>
+              <a href="#gambar-1" class="prev">prev</a>
+              <img src="img/gallery/show/Pelatihan Star App Petani.jpg" alt="Pelatihan Aplikasi ke Petani" />
+              <a href="#gambar-3" class="next">next</a>
+            </div>
           </div>
           <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/3.jpg" alt="Gambar 3" class="img-fluid gallery-img" />
+            <a href="#gambar-3">
+              <img src="img/gallery/thumbnail/SMART SPOT HRDD Pekanbaru.jpg" alt="Gambar 3" class="img-fluid gallery-img" />
             </a>
+            <div class="overlay" id="gambar-3">
+              <a href="#" class="close">x close</a>
+              <a href="#gambar-2" class="prev">prev</a>
+              <img src="img/gallery/show/HRDD Pekanbaru1.jpg" alt="Sosialisasi Aplikasi ke Supplier Pekanbaru" />
+              <a href="#gambar-4" class="next">next</a>
+            </div>
           </div>
           <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/4.jpg" alt="Gambar 4" class="img-fluid gallery-img" />
+            <a href="#gambar-4">
+              <img src="img/gallery/thumbnail/SMART SPOT HRDD Pekanbaru1.jpg" alt="Gambar 4" class="img-fluid gallery-img" />
             </a>
+            <div class="overlay" id="gambar-4">
+              <a href="#" class="close">x close</a>
+              <a href="#gambar-3" class="prev">prev</a>
+              <img src="img/gallery/show/HRDD Pekanbaru.jpg" alt="Sosialisasi Aplikasi ke Supplier Pekanbaru" />
+              <a href="#gambar-5" class="next">next</a>
+            </div>
           </div>
           <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/5.jpg" alt="Gambar 5" class="img-fluid gallery-img" />
+            <a href="#gambar-5">
+              <img src="img/gallery/thumbnail/SMART SPOT HRDD Balikpapan 2025.jpeg" alt="Gambar 5" class="img-fluid gallery-img" />
             </a>
+            <div class="overlay" id="gambar-5">
+              <a href="#" class="close">x close</a>
+              <a href="#gambar-4" class="prev">prev</a>
+              <img src="img/gallery/show/HRDD Balikpapan.jpeg" alt="Sosialisasi Aplikasi ke Supplier Balikpapan" />
+              <a href="#gambar-6" class="next">next</a>
+            </div>
           </div>
           <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/6.jpg" alt="Gambar 6" class="img-fluid gallery-img" />
+            <a href="#gambar-6">
+              <img src="img/gallery/thumbnail/Pelatihan STAR Apps.jpg" alt="Gambar 6" class="img-fluid gallery-img" />
             </a>
+            <div class="overlay" id="gambar-6">
+              <a href="#" class="close">x close</a>
+              <a href="#gambar-5" class="prev">prev</a>
+              <img src="img/gallery/show/Pelatihan STAR App.jpg" alt="Sosialisasi Aplikasi ke Petani Sumsel" />
+              <a href="#gambar-7" class="next">next</a>
+            </div>
           </div>
           <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/7.jpg" alt="Gambar 7" class="img-fluid gallery-img" />
+            <a href="#gambar-7">
+              <img src="img/gallery/thumbnail/Kades Jambi.jpg" alt="Gambar 7" class="img-fluid gallery-img" />
             </a>
+            <div class="overlay" id="gambar-7">
+              <a href="#" class="close">x close</a>
+              <a href="#gambar-6" class="prev">prev</a>
+              <img src="img/gallery/show/Jambi.jpg" alt="Engagement Kades untuk implementasi Aplikasi" />
+              <a href="#gambar-8" class="next">next</a>
+            </div>
           </div>
           <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/8.jpg" alt="Gambar 8" class="img-fluid gallery-img" />
+            <a href="#gambar-8">
+              <img src="img/gallery/thumbnail/Kantor Jambi Mill.jpg" alt="Gambar 8" class="img-fluid gallery-img" />
             </a>
+            <div class="overlay" id="gambar-8">
+              <a href="#" class="close">x close</a>
+              <a href="#gambar-7" class="prev">prev</a>
+              <img src="img/gallery/show/SBNM.jpg" alt="Sosialisasi Aplikasi ke Sungai Bengkal Mill" />
+              <a href="#gambar-9" class="next">next</a>
+            </div>
           </div>
           <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/9.jpg" alt="Gambar 9" class="img-fluid gallery-img" />
+            <a href="#gambar-9">
+              <img src="img/gallery/thumbnail/Mill UTJM.jpg" alt="Gambar 9" class="img-fluid gallery-img" />
             </a>
+            <div class="overlay" id="gambar-9">
+              <a href="#" class="close">x close</a>
+              <a href="#gambar-8" class="prev">prev</a>
+              <img src="img/gallery/show/UTJM.jpg" alt="Sosialisasi Aplikasi ke Ujung Tanjung Mill" />
+              <a href="#gambar-10" class="next">next</a>
+            </div>
           </div>
           <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/10.jpg" alt="Gambar 10" class="img-fluid gallery-img" />
+            <a href="#gambar-10">
+              <img src="img/gallery/thumbnail/SMART SPOT Samarinda 2023.jpeg" alt="Gambar 10" class="img-fluid gallery-img" />
             </a>
+            <div class="overlay" id="gambar-10">
+              <a href="#" class="close">x close</a>
+              <a href="#gambar-9" class="prev">prev</a>
+              <img src="img/gallery/show/SSA Samarinda.jpeg" alt="Sosialisasi Aplikasi ke Supplier Samarinda" />
+              <a href="#gambar-1" class="next">next</a>
+            </div>
           </div>
         </div>
       </div>
@@ -313,13 +445,619 @@
     </footer>
     <!--End footer-->
 
+    <div class="modal fade" id="modalKids" tabindex="-1" aria-labelledby="modalKidsLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalKidsLabel">Jember - Jawa Timur</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Year</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1988</td>
+                  <td>Born</td>
+                </tr>
+                <tr>
+                  <td>1995-1996</td>
+                  <td>Kindergarten</td>
+                </tr>
+                <tr>
+                  <td>1991 - 1997</td>
+                  <td>Elementary School</td>
+                </tr>
+                <tr>
+                  <td>1997 - 2000</td>
+                  <td>Junior High School</td>
+                </tr>
+                <tr>
+                  <td>2000 - 2006</td>
+                  <td>Senior High School</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalCollege" tabindex="-1" aria-labelledby="modalCollegeLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCollegeLabel">Surabaya - Jawa Timur</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Year</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2009-2013</td>
+                  <td>Go to college in Diploma IV Informatics Engineering from the Electronics Engineering Polytechnic Institute of Surabaya - Sepuluh Nopember Institute of Technology (EEPIS-ITS)</td>
+                </tr>
+                <tr>
+                  <td>2013 - 2014</td>
+                  <td>Worked at PT HM Sampoerna Head Office at Kali Rungkut SIER Surabaya as an IS Customer Service as End User Computing</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalHome" tabindex="-1" aria-labelledby="modalHomeLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalHomeLabel">Bekasi - Jawa Barat</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Year</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2014 - Now</td>
+                  <td>Living in Kabupaten Bekasi, Tambun Utara, Satriamekar Village until now</td>
+                </tr>
+                <tr>
+                  <td>2016 - 2017</td>
+                  <td>Worked at PT Nippon Indosari Corpindo (SARI ROTI) on MM2100 Industrial Estate as an Junior Programmer</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalOffice" tabindex="-1" aria-labelledby="modalOfficeLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalOfficeLabel">Jl. MH Thamrin - Jakarta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Year</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2018 - Now</td>
+                  <td>Working at PT SMART Tbk (Sinarmas Agro Resources and Technology) as an IS and Database Officer</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        let markersLayer = new L.LayerGroup();
+
+        var map_dashboard = '';
+        map_dashboard = createMap(-3.5609288204778693, 108.58174559614906, 4);
+
+        markersLayer.addTo(map_dashboard);
+
+        tampil_marker_home();
+        tampil_marker_office_smart();
+        tampil_marker_college();
+        tampil_marker_kids();
+        tampil_marker_telkom();
+        tampil_marker_vedc();
+        tampil_marker_jogja();
+        tampil_marker_pandaan();
+        tampil_marker_sumsel_linggau();
+        tampil_marker_sumsel_palembang();
+        tampil_marker_belitung();
+        tampil_marker_jambi();
+        tampil_marker_riau();
+        tampil_marker_sumut();
+        tampil_marker_kalteng();
+        tampil_marker_kaltim_samarinda();
+        tampil_marker_kaltim_balikpapan();
+        tampil_marker_bali();
+
+        function tampil_marker_bali() {
+          let LatLongBali = [-8.808743328866623, 115.15885914229375];
+
+          var baliIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markerbali = L.marker(LatLongBali, {
+            icon: baliIcon,
+          });
+
+          // Tambah Tooltip
+          markerbali.bindTooltip('Dinas PT SMART Tbk', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markerbali);
+        }
+
+        function tampil_marker_kaltim_balikpapan() {
+          let LatLongKaltimBPN = [-1.2626169887843106, 116.8404742870398];
+
+          var kaltim_balikpapanIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markerkaltim_balikpapan = L.marker(LatLongKaltimBPN, {
+            icon: kaltim_balikpapanIcon,
+          });
+
+          // Tambah Tooltip
+          markerkaltim_balikpapan.bindTooltip('Dinas PT SMART Tbk', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markerkaltim_balikpapan);
+        }
+
+        function tampil_marker_kaltim_samarinda() {
+          let LatLongKaltimSMD = [-0.4803739066724864, 117.15336376408705];
+
+          var kaltim_samarindaIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markerkaltim_samarinda = L.marker(LatLongKaltimSMD, {
+            icon: kaltim_samarindaIcon,
+          });
+
+          // Tambah Tooltip
+          markerkaltim_samarinda.bindTooltip('Dinas PT SMART Tbk', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markerkaltim_samarinda);
+        }
+
+        function tampil_marker_kalteng() {
+          let LatLongKalteng = [-2.6848378449384875, 111.63184800258686];
+
+          var kaltengIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markerkalteng = L.marker(LatLongKalteng, {
+            icon: kaltengIcon,
+          });
+
+          // Tambah Tooltip
+          markerkalteng.bindTooltip('Dinas PT SMART Tbk', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markerkalteng);
+        }
+
+        function tampil_marker_sumut() {
+          let LatLongSumut = [3.6121526198652125, 98.49610823937016];
+
+          var sumutIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markersumut = L.marker(LatLongSumut, {
+            icon: sumutIcon,
+          });
+
+          // Tambah Tooltip
+          markersumut.bindTooltip('Dinas PT SMART Tbk', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markersumut);
+        }
+
+        function tampil_marker_riau() {
+          let LatLongRiau = [0.9736373726484631, 101.29674151269744];
+
+          var riauIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markerriau = L.marker(LatLongRiau, {
+            icon: riauIcon,
+          });
+
+          // Tambah Tooltip
+          markerriau.bindTooltip('Dinas PT SMART Tbk', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markerriau);
+        }
+
+        function tampil_marker_jambi() {
+          let LatLongJambi = [-1.568492249629201, 102.6099562368791];
+
+          var jambiIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markerjambi = L.marker(LatLongJambi, {
+            icon: jambiIcon,
+          });
+
+          // Tambah Tooltip
+          markerjambi.bindTooltip('Dinas PT SMART Tbk', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markerjambi);
+        }
+
+        function tampil_marker_belitung() {
+          let LatLongBelitung = [-2.7583125664031374, 107.69553155181742];
+
+          var belitungIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markerbelitung = L.marker(LatLongBelitung, {
+            icon: belitungIcon,
+          });
+
+          // Tambah Tooltip
+          markerbelitung.bindTooltip('Dinas PT SMART Tbk', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markerbelitung);
+        }
+
+        function tampil_marker_sumsel_palembang() {
+          let LatLongSumselPlb = [-2.9742995888284236, 104.45537212680249];
+
+          var sumsel_palembangIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markersumsel_palembang = L.marker(LatLongSumselPlb, {
+            icon: sumsel_palembangIcon,
+          });
+
+          // Tambah Tooltip
+          markersumsel_palembang.bindTooltip('Dinas PT SMART Tbk', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markersumsel_palembang);
+        }
+
+        function tampil_marker_sumsel_linggau() {
+          let LatLongSumselLLJ = [-3.6340398583691096, 103.21991370944656];
+
+          var sumsel_linggauIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markersumsel_linggau = L.marker(LatLongSumselLLJ, {
+            icon: sumsel_linggauIcon,
+          });
+
+          // Tambah Tooltip
+          markersumsel_linggau.bindTooltip('Dinas PT SMART Tbk', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markersumsel_linggau);
+        }
+
+        function tampil_marker_pandaan() {
+          let LatLongPandaan = [-7.69824459190285, 112.69822249694505];
+
+          var pandaanIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markerpandaan = L.marker(LatLongPandaan, {
+            icon: pandaanIcon,
+          });
+
+          // Tambah Tooltip
+          markerpandaan.bindTooltip('Pasuruan (2013): Penempatan pertama kerja di PT HM Sampoerna Tbk Plant Sukorejo - Pasuruan', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markerpandaan);
+        }
+
+        function tampil_marker_jogja() {
+          let LatLongJogja = [-7.800042744374128, 110.39443813701686];
+
+          var jogjaIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markerjogja = L.marker(LatLongJogja, {
+            icon: jogjaIcon,
+          });
+
+          // Tambah Tooltip
+          markerjogja.bindTooltip('Jogja: Training di Inixindo Jogja', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markerjogja);
+        }
+
+        function tampil_marker_telkom() {
+          let LatLongTelkom = [-6.972403769432801, 107.63037131689876];
+
+          var telkomIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markertelkom = L.marker(LatLongTelkom, {
+            icon: telkomIcon,
+          });
+
+          // Tambah Tooltip
+          markertelkom.bindTooltip('Bandung (2006 - 2007): Sempat kuliah di STT Telkom namun tidak diselesaikan', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markertelkom);
+        }
+
+        function tampil_marker_vedc() {
+          let LatLongVEDC = [-7.933287025369018, 112.66024795851729];
+
+          var vedcIcon = L.icon({
+            iconUrl: 'dinas.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markervedc = L.marker(LatLongVEDC, {
+            icon: vedcIcon,
+          });
+
+          // Tambah Tooltip
+          markervedc.bindTooltip('Malang (2007 - 2009): Sempat kursus otomasi di PPPTK/VEDC Malang', {
+            direction: 'top',
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markervedc);
+        }
+
+        function tampil_marker_home() {
+          let LatLongHome = [-6.204509614030216, 107.05097331057809];
+
+          var homeIcon = L.icon({
+            iconUrl: 'home.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markerhome = L.marker(LatLongHome, {
+            icon: homeIcon,
+          });
+
+          // Tambah Tooltip
+          markerhome.bindTooltip('Bekasi (2014 - Sekarang): Sempat bekerja dan menetap di Kabupaten Bekasi', {
+            direction: 'top',
+          });
+
+          // On click → Tampilkan modal Bootstrap
+          markerhome.on('click', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('modalHome'));
+            myModal.show();
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markerhome);
+        }
+
+        function tampil_marker_office_smart() {
+          let LatLongSmartOffice = [-6.19005896277624, 106.82357344158271];
+
+          var smartofficeIcon = L.icon({
+            iconUrl: 'office_sml.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markersmartoffice = L.marker(LatLongSmartOffice, {
+            icon: smartofficeIcon,
+          });
+
+          // Tambah Tooltip
+          markersmartoffice.bindTooltip('Jakarta (2018 - Sekarang): Bekerja di Sinarmas Agribusiness and Food', {
+            direction: 'top',
+          });
+
+          // On click → Tampilkan modal Bootstrap
+          markersmartoffice.on('click', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('modalOffice'));
+            myModal.show();
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markersmartoffice);
+        }
+
+        function tampil_marker_college() {
+          let LatLongCollege = [-7.276742369174422, 112.79218328157083];
+
+          var collegeIcon = L.icon({
+            iconUrl: 'college.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markercollege = L.marker(LatLongCollege, {
+            icon: collegeIcon,
+          });
+
+          // Tambah Tooltip
+          markercollege.bindTooltip('Surabaya (2009 - 2014): Kuliah dan sempat bekerja', {
+            direction: 'top',
+          });
+
+          // On click → Tampilkan modal Bootstrap
+          markercollege.on('click', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('modalCollege'));
+            myModal.show();
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markercollege);
+        }
+
+        function tampil_marker_kids() {
+          let LatLongKids = [-8.19853980153975, 113.64118932284345];
+
+          var kidsIcon = L.icon({
+            iconUrl: 'kid.png', // pastikan file ini ada
+            iconSize: [32, 32], // ukuran ikon agar terlihat jelas
+            iconAnchor: [16, 32], // titik jangkar (bagian bawah tengah ikon)
+          });
+
+          let markerkids = L.marker(LatLongKids, {
+            icon: kidsIcon,
+          });
+
+          // Tambah Tooltip
+          markerkids.bindTooltip('Jember (1988 - 2006): Kota kelahiran, masa kecil dan masa sekolah', {
+            direction: 'top',
+          });
+
+          // On click → Tampilkan modal Bootstrap
+          markerkids.on('click', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('modalKids'));
+            myModal.show();
+          });
+
+          // Pastikan markersLayer sudah diinisialisasi dan ditambahkan ke map
+          markersLayer.addLayer(markerkids);
+        }
+
+        function createMap(centerLat, centerLng, zoom) {
+          var map_dashboard = new L.Map('map');
+
+          // Data provider
+          var osmUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}';
+          //var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+          var osmAttrib = 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012';
+
+          // Layer
+          var osmLayer = new L.TileLayer(osmUrl, {
+            minZoom: 5,
+            maxZoom: 19,
+            attribution: osmAttrib,
+          });
+
+          // Map
+          map_dashboard.setView(new L.LatLng(centerLat, centerLng), zoom);
+          map_dashboard.addLayer(osmLayer);
+          map_dashboard.invalidateSize();
+
+          return map_dashboard;
+        }
+      });
+    </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      const galleryImage = document.querySelectorAll(".gallery-img");
+      const galleryImage = document.querySelectorAll('.gallery-img');
 
       galleryImage.forEach((img, i) => {
-        img.dataset.aos = "fade-down";
+        img.dataset.aos = 'fade-down';
         img.dataset.aosDelay = i * 100;
         img.dataset.aosDuration = 1000;
       });
@@ -333,12 +1071,17 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to(".lead", { duration: 2, delay: 1.5, text: "I am a web programmer and UI designer" });
-      gsap.from(".jumbotron img", { duration: 1, y: -100, rotateY: 360, opacity: 0, ease: "bounce" });
-      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
-      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+      gsap.to('.lead', {
+        duration: 2,
+        delay: 1.5,
+        text: 'I am a professional with a strong background in IT programming, database management, and currently expanding my expertise in the field of data science. I graduated with a Diploma IV (Bachelor’s equivalent) in Informatics Engineering from the Electronics Engineering Polytechnic Institute of Surabaya - Sepuluh Nopember Institute of Technology (EEPIS-ITS) , 12 years ago',
+      });
+      gsap.from('.jumbotron img', { duration: 1, y: -100, rotateY: 360, opacity: 0, ease: 'bounce' });
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
+      gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
     </script>
-    <script>
+
+    <!-- <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbyoHOdlydwiPM9G0EJlt3gZMPqHQ7_y5-qCcPJfo25TktncJuaKSA-KrEVjd_qBDAoZ/exec";
       const form = document.forms["dfe-contact-form"];
       const btnKirim = document.querySelector(".btn-kirim");
@@ -366,9 +1109,10 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+     -->
     <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
     <script type="text/javascript">
-      VanillaTilt.init(document.querySelectorAll(".animal-box"), {
+      VanillaTilt.init(document.querySelectorAll('.certi-box'), {
         max: 35,
         speed: 400,
         glare: true,
